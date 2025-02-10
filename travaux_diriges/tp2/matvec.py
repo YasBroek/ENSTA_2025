@@ -1,6 +1,8 @@
 # Produit matrice-vecteur v = A.u
 import numpy as np
+from time import time
 
+deb = time()
 # Dimension du problème (peut-être changé)
 dim = 120
 # Initialisation de la matrice
@@ -14,3 +16,7 @@ print(f"u = {u}")
 # Produit matrice-vecteur
 v = A.dot(u)
 print(f"v = {v}")
+
+fin = time()
+
+print(f"La multiplication a pris {fin-deb} secondes")
